@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <style>
+        body,ul {
+          margin: 0;
+          padding: 0;
+        }
+        ul {
+          list-style: none;
+        }
+        .products {
+          width: 800px;
+          background-color: #ededed;
+        }
+        .products::after {
+          content: "";
+          display:block;
+          clear: both;
+        }
+        /* (800px - 2*10px )/3=260px */
+        .products > li {
+          float: left;
+          height: 100px;
+          width: 260px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          background-color: teal;
+        }
+        .products > li:nth-child(3n) {
+          margin-right: 0;
+        } 
+      </style>
+</head>
+<body>
+    <h1>德云社</h1>
+    <h2>相声演员</h2>
+    <ul class="products">
+        <li>郭德纲</li>
+        <li>于谦</li>
+        <li>岳云鹏</li>
+        <li>张云雷</li>
+        <li>张九龄</li>
+        <li>张鹤伦</li>
+        <li>烧饼</li>
+        <li>张九南</li>
+        <li>郭麒麟</li>
+      </ul>
+</body>
+</html>
